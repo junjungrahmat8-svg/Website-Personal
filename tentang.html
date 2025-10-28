@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Saya</title>
+    <style>
+      /* Styling untuk navbar */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f5f7;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        background-color: #2a4d69;
+        padding: 10px 20px;
+        display: flex;
+        gap: 20px;
+        justify-content: center; /* [BARU] Membuat rata tengah di desktop */
+        flex-wrap: wrap; /* [TAMBAHAN] Agar rapi jika link terlalu banyak */
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 15px;
+        border-radius: 4px;
+      }
+
+      nav a:hover,
+      nav a.active {
+        background-color: #1e3550;
+      }
+
+      /* Container utama */
+      .container {
+        max-width: 900px;
+        margin: 40px auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgb(0 0 0 / 0.1);
+        padding: 30px 40px;
+      }
+
+      .header-section {
+        margin-bottom: 30px;
+      }
+
+      .header-section h2 {
+        font-weight: bold;
+        color: #2a4d69;
+      }
+
+      /* Bagian profil */
+      .profile {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 30px;
+      }
+
+      .profile img {
+        width: 150px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 5px 10px rgb(0 0 0 / 0.1);
+      }
+
+      .profile-text {
+        background-color: #2a4d69;
+        color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        flex: 1;
+      }
+
+      .profile-text h3 {
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+
+      .profile-text p {
+        line-height: 1.5;
+      }
+
+      /* Bagian keahlian */
+      .skills {
+        color: #333;
+      }
+
+      .skills ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .skills li {
+        margin-bottom: 10px;
+      }
+
+      .skills strong {
+        color: #2a4d69;
+      }
+
+      footer {
+        text-align: center;
+        color: #999;
+        margin: 50px 0 20px;
+        font-size: 14px;
+      }
+
+      /* --- Kode untuk Mode Mobile --- */
+      @media (max-width: 600px) {
+        /* --- [DIUBAH] Perbaikan Navigasi Mobile --- */
+        nav {
+          flex-wrap: nowrap; /* Memaksa link tetap sejajar (tidak turun) */
+          gap: 5px; /* Mengurangi jarak antar link */
+          padding: 10px 5px; /* Mengurangi padding kiri-kanan nav */
+        }
+
+        nav a {
+          padding: 10px 8px; /* Mengurangi padding di dalam link */
+          font-size: 0.9rem; /* Sedikit mengecilkan font agar muat */
+        }
+        /* ------------------------------------- */
+
+        /* 2. Membuat foto di atas keterangan */
+        .profile {
+          flex-direction: column; /* Mengubah susunan jadi vertikal */
+          align-items: center; /* Membuat foto dan teks jadi di tengah */
+        }
+
+        .container {
+          /* (Opsional) Mengurangi padding di mobile agar lebih lega */
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="home.html">Beranda</a>
+      <a href="#">Portofolio</a>
+      <a href="#" class="active">Tentang Saya</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <div class="container">
+      <div class="header-section">
+        <h2>Perkenalan</h2>
+      </div>
+
+      <div class="profile">
+        <img src="O.jpg" alt="Foto Junjung Rahmat Santoso" />
+        <div class="profile-text">
+          <h3>Tentang Saya</h3>
+          <p>
+            Saya Junjung Rahmat Santoso, seorang Junior Data Analyst dan Junior
+            Data Scientist yang antusias. Saya percaya bahwa setiap data
+            memiliki cerita, dan saya bersemangat untuk mengungkap wawasan
+            tersembunyi di baliknya. Dengan fokus kuat pada machine learning dan
+            pemrosesan bahasa alami (NLP), saya mendedikasikan diri untuk
+            mengubah data kompleks menjadi solusi yang dapat ditindaklanjuti.
+          </p>
+        </div>
+      </div>
+
+      <div class="skills">
+        <strong>Keahalin Teknis</strong>
+        <ul>
+          <li>
+            <strong>Bahasa Pemprogramn</strong>: Python (Pandas, Scitt-learn,
+            Nümp), SQL
+          </li>
+          <li>Nümp, SQL</li>
+          <li><strong>Machine Learning</strong>: -</li>
+          <li>
+            <strong>Visualizal Data</strong>:Tableau, Matpollit, Excel tols
+          </li>
+          <li><strong>Database</strong>: MySQL</li>
+          <li><strong>SPK Suport</strong>: AHP, SAW, WP, PF.</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>&copy; 2024 Junjung Rahmat Santoso</footer>
+  </body>
+</html>
